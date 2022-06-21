@@ -1,0 +1,587 @@
+*{
+    margin:0%;
+    padding: 0%;
+    top: 0%;
+    background-color: black;
+}
+
+/* offer line */
+.offerline{
+    text-align: center;
+    background-color: red;
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.offerblink{
+animation: blinker 1.5s infinite;
+background-color: red;
+color: white;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.ofli{
+    padding-top: 10px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+.ofli:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* navbar */
+.mainhead{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+}
+/* brand name */
+
+.brandname{
+    width: 200px;
+    float: left;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 30px;
+}
+.brandnam{
+    font-size: 40px;
+}
+.brandhome{
+    color: white;
+}
+.brandhome:hover{
+    color: white;
+}
+
+.a{
+    color:red;
+}
+
+/* navbar links */
+.megamenu{
+    width: 400px;
+    float: left;
+    padding-left: 50px;
+}
+.menulink{
+    color: white;
+}
+.menulink:hover{
+    color: rgb(255, 255, 255);
+    visibility: visible;
+}
+
+.megaul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.megaul .shopli .offerli .moreli{
+    margin-top: 10px;
+}
+
+.megamenu .megaul .shopli .submenu{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    top: 46px;
+    padding: 25px 15px;
+    justify-content: space-around;
+    display: flex;
+    line-height: 24px;
+    visibility: hidden;
+    transition: 0.2s;
+    
+}
+
+.megamenu .megaul .shopli .submenu .col img{
+    width: 310px;
+}
+
+.megamenu .megaul .shopli:hover .submenu{
+    visibility: visible;
+
+}
+.shoparo{
+    font-size: 10px;
+}
+.menusearch{
+    width: 80px;
+    float: left;
+}
+.search{
+    background-color: white;
+}
+/* more */
+.moreul{
+    position: absolute;
+    top: 100%;
+    left: 46%;
+    padding: 1%;
+    list-style: none;
+    color: white;
+    background-color: black;
+    text-align: left;
+    padding-left:15px;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.megamenu .moreli:hover .moreul{
+    visibility: visible;
+
+}
+.moredrop{
+    color: white;
+}
+.search{
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 2em;
+    font-size: 20px;
+}
+
+.menuicon{
+    width: 150px;
+    float: left;
+    color: white;
+}
+.navicon{
+    color: white;
+    font-size: 25px;
+}
+
+
+.imageslider{
+    width: 100%;
+    height: 70vh;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-image:url(image/headimg1.webp);
+    animation: slide 10s linear infinite;
+    transition: 10s;
+    
+}
+@keyframes slide{
+    0%{
+        background-image: url(image/headimg1.webp);
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url(image/headimg2.webp);
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url(image/headimg3.webp);
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url(image/headimg4.webp);
+        background-repeat: no-repeat;
+    }
+}
+
+/* section for best seller */
+
+.price{
+    color: red;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ del{
+    color: gray;
+    background-color: white;
+ }
+.BShead{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.bsrow{
+    padding-bottom: 75px;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bscard{
+    border-radius: 30px;
+    background-color:#f2cff3;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bscard-body{ 
+    border-radius: 30px;
+    color: white;
+    font-size: 10px;
+    background-color: #ffffff;
+    
+}
+
+.bsimg{  
+    background-color: #f2cff3;
+    background-image: url(bestseller/best1.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.bsimg:hover{
+    background-image: url(bestseller/bests1.webp);
+}
+
+
+.bsimg2{  
+    background-color:#f2cff3;
+    background-image: url(bestseller/best2.webp);
+    border-radius: 10px 10px 0 0;
+    height: 260px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+
+.bsimg2:hover{
+    background-image: url(bestseller/bests2.webp);
+} 
+
+
+.bsimg3{  
+    background-color:  #f2cff3;
+    background-image: url(bestseller/best3.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+ 
+
+.bsimg3:hover{
+    background-image: url(bestseller/bests3.webp);
+} 
+
+.bsimg4{  
+    background-color: #f2cff3;
+    background-image: url(bestseller/best4.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+
+
+.bsimg4:hover{
+    background-image: url(bestseller/bests4.webp);
+} 
+.bsimg1{ 
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 0px 5px 0px 5px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* smart watch */
+
+.swimg{  
+    background-color: #f2cff3;
+    background-image: url(image/smart-watch/smartw1.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.swimg:hover{
+    background-image: url(image/smart-watch/smartwa1.webp);
+}
+
+
+.swimg2{  
+    background-color: #f2cff3;
+    background-image: url(image/smart-watch/smartw2.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.swimg2:hover{
+    background-image: url(image/smart-watch/smartwa2.webp);
+}
+.swimg3{  
+    background-color: #f2cff3;
+    background-image: url(image/smart-watch/smartw3.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.swimg3:hover{
+    background-image: url(image/smart-watch/smartwa3.webp);
+}
+.swimg4{  
+    background-color: #f2cff3;
+    background-image: url(image/smart-watch/smartw4.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.swimg4:hover{
+    background-image: url(image/smart-watch/smartwa4.webp);
+}
+
+
+.bsimg1{ 
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 0px 5px 0px 5px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* DC */
+
+.DCimg{  
+    background-color: #f2cff3;
+    background-image: url(image/botDc/boatdc1.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.DCimg2{  
+    background-color: #f2cff3;
+    background-image: url(image/botDc/boatdc2.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.DCimg3{  
+    background-color: #f2cff3;
+    background-image: url(image/botDc/boatdc3.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.DCimg4{  
+    background-color: #f2cff3;
+    background-image: url(image/botDc/boatdc4.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Gmaing */
+
+.gaming{  
+    background-color: #f2cff3;
+    background-image: url(image/gaming/gaming1.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.gaming:hover{
+    background-image: url(image/gaming/gaming01.webp);
+}
+
+
+.gaming2{  
+    background-color: #f2cff3;
+    background-image: url(image/gaming/gaming2.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.gaming2:hover{
+    background-image: url(image/gaming/gaming02.webp);
+}
+.gaming3{  
+    background-color: #f2cff3;
+    background-image: url(image/gaming/gaming3.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.gaming3:hover{
+    background-image: url(image/gaming/gaming03.webp);
+}
+.gaming4{  
+    background-color: #f2cff3;
+    background-image: url(image/gaming/gaming4.webp);
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+.gaming4:hover{
+    background-image: url(image/gaming/gaming04.webp);}
+
+
+
+
+
+
+/* section for footer */
+/* brand promise */
+.brandPromise{
+    text-align: center;
+    background-color: rgb(51, 48, 48);
+    height: 35vh;
+    color: white;
+    padding-left: 110px;
+}
+.bphead{
+    background-color: rgb(51, 48, 48);
+    padding-top: 50px;
+    padding-right:100px ;
+}
+.bplist{
+    display: flex;
+    background-color: rgb(51, 48, 48);
+    padding-top: 20px;
+    margin-right: 150px;
+    padding-left: 6.5%;
+
+}
+.shiptruck{
+    background-color:rgb(51, 48, 48);
+    font-size: 30px;
+    color: rgb(253, 93, 93);
+}
+/* extrafoot */
+.extrafoot{ 
+    width: 100%;
+    background-color: rgb(66,66,66);
+    text-align: center;
+    height: 70px;
+    color: rgb(185, 178, 178);
+}
+.exfoot{
+    background-color: rgb(66, 66, 66);
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+}
+
+
+/* global */
+
+
+/* footer */
+
+.footer{
+    width: 100%;
+    padding: 15px;
+    color: white;
+}
+.row{
+    padding-top: 50px;
+}
+.brandfoot{
+    font-size: 45px;
+}
+.pfoot{
+    color: rgb(153, 157, 160);
+}
+.subsbtn{
+    color: white;
+    background-color: red;
+    width: 40%;
+    font-size: 20px;
+}
+.mail{
+   background-color: wheat;
+   width: 50%;
+}
+
+.footul{
+    list-style: none;
+    color: rgb(172, 172, 172);
+}
+.footli{
+    color: rgb(172, 172, 172);
+}
+
+.footli:hover{
+    color: rgb(172, 172, 172);
+}
+
+.lastfoot{
+    text-align: center;
+    font-size: 5px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: rgb(150, 150, 150);
+}
